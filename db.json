@@ -1,0 +1,304 @@
+{
+  "questions": [
+    [
+      {
+        "id": 1,
+        "question": "Which one of the five is least like the other four?",
+        "answer1": "Dog",
+        "answer2": "Mouse",
+        "answer3": "Lion",
+        "answer4": "Snake",
+        "correctAnswer": "Snake"
+      },
+      {
+        "id": 2,
+        "question": "Which number should come next in the series? 1 - 1 - 2 - 3 - 5 - 8 - 13",
+        "answer1": "8",
+        "answer2": "13",
+        "answer3": "21",
+        "answer4": "26",
+        "correctAnswer": "21"
+      },
+      {
+        "id": 3,
+        "question": "Which one of the five choices makes the best comparison? PEACH is to HCAEP as 46251 is to:",
+        "answer1": "25641",
+        "answer2": "26451",
+        "answer3": "12654",
+        "answer4": "15264",
+        "correctAnswer": "15264"
+      },
+      {
+        "id": 4,
+        "question": "Mary, who is sixteen years old, is four times as old as her brother. How old will Mary be when she is twice as old as her brother?",
+        "answer1": "20",
+        "answer2": "24",
+        "answer3": "25",
+        "answer4": "28",
+        "correctAnswer": "24"
+      },
+      {
+        "id": 5,
+        "question": "Which one of the numbers does not belong in the following series? 2 - 3 - 6 - 7 - 8 - 14 - 15 - 30",
+        "answer1": "THREE",
+        "answer2": "SEVEN",
+        "answer3": "EIGHT",
+        "answer4": "FIFTEEN",
+        "correctAnswer": "EIGHT"
+      },
+      {
+        "id": 6,
+        "question": "Which one of the five choices makes the best comparison? Finger is to Hand as Leaf is to:",
+        "answer1": "Twig",
+        "answer2": "Tree",
+        "answer3": "Branch",
+        "answer4": "Blossom",
+        "correctAnswer": "Twig"
+      }
+    ],
+    [
+      {
+        "id": 7,
+        "question": "If you rearrange the letters 'CIFAIPC' you would have the name of a(n):",
+        "answer1": "City",
+        "answer2": "Animal",
+        "answer3": "Ocean",
+        "answer4": "River",
+        "correctAnswer": "Ocean"
+      },
+      {
+        "id": 8,
+        "question": "Choose the number that is 1/4 of 1/2 of 1/5 of 200:",
+        "answer1": "2",
+        "answer2": "5",
+        "answer3": "10",
+        "answer4": "25",
+        "correctAnswer": "5"
+      },
+      {
+        "id": 9,
+        "question": "John needs 13 bottles of water from the store. John can only carry 3 at a time. What's the minimum number of trips John needs to make to the store?",
+        "answer1": "3",
+        "answer2": "4",
+        "answer3": "4 1/2",
+        "answer4": "5",
+        "correctAnswer": "5"
+      },
+      {
+        "id": 10,
+        "question": "If all Bloops are Razzies and all Razzies are Lazzies, then all Bloops are definitely Lazzies?",
+        "answer1": "True",
+        "answer2": "False",
+        "answer3": "I don't know",
+        "answer4": "[^-^]",
+        "correctAnswer": "True"
+      },
+      {
+        "id": 11,
+        "question": "Choose the word most similar to <<Trustworthy>>:",
+        "answer1": "Resolute",
+        "answer2": "Tenacity",
+        "answer3": "Relevant",
+        "answer4": "Reliable",
+        "correctAnswer": "Reliable"
+      },
+      {
+        "id": 12,
+        "question": "If you rearrange the letters 'LNGEDNA' you have the name of a(n):",
+        "answer1": "Animal",
+        "answer2": "Country",
+        "answer3": "City",
+        "answer4": "Ocean",
+        "correctAnswer": "Country"
+      }
+    ],
+    [
+      {
+        "id": 13,
+        "question": "Which one of the numbers does not belong in the following series? 1 - 2 - 5 - 10 - 13 - 26 - 29 - 48",
+        "answer1": "1",
+        "answer2": "5",
+        "answer3": "29",
+        "answer4": "48",
+        "correctAnswer": "48"
+      },
+      {
+        "id": 14,
+        "question": "Ralph likes 25 but not 24; he likes 400 but not 300; he likes 144 but not 145. Which does he like:",
+        "answer1": "10",
+        "answer2": "50",
+        "answer3": "200",
+        "answer4": "1600",
+        "correctAnswer": "1600"
+      },
+      {
+        "id": 15,
+        "question": "Which one of the following things is the least like the others?",
+        "answer1": "Poem",
+        "answer2": "Novel",
+        "answer3": "Painting",
+        "answer4": "Flower",
+        "correctAnswer": "Flower"
+      },
+      {
+        "id": 16,
+        "question": "29,27,24,20,15... What is next ?",
+        "answer1": "7",
+        "answer2": "9",
+        "answer3": "10",
+        "answer4": "I don't know",
+        "correctAnswer": "9"
+      },
+      {
+        "id": 17,
+        "question": "2, 10, 12, 60, 62, 310... What is next ?",
+        "answer1": "312",
+        "answer2": "360",
+        "answer3": "1550",
+        "answer4": "I don't know",
+        "correctAnswer": "312"
+      },
+      {
+        "id": 18,
+        "question": "Loop for Javasforcript?",
+        "answer1": "For",
+        "answer2": "For, while....do, if",
+        "answer3": "If",
+        "answer4": "I don't know",
+        "correctAnswer": "For, while....do, if"
+      }
+    ],
+    [
+      {
+        "id": 19,
+        "question": "2, 4, 8, 16, 32, 64 ..... What is next?",
+        "answer1": "90",
+        "answer2": "140",
+        "answer3": "256",
+        "answer4": "128",
+        "correctAnswer": "128"
+      },
+      {
+        "id": 20,
+        "question": "We already know that Mary is 16 years old, and her brother is 4 years old. How oldwill Mary be when she is twice as old as her brother ?",
+        "answer1": "20",
+        "answer2": "24",
+        "answer3": "26",
+        "answer4": "28",
+        "correctAnswer": "24"
+      },
+      {
+        "id": 21,
+        "question": "The student could not answer the question, so he .....",
+        "answer1": "gave off",
+        "answer2": "gave into",
+        "answer3": "gave up",
+        "answer4": "gave away",
+        "correctAnswer": "gave up"
+      },
+      {
+        "id": 22,
+        "question": "There a restaurant near here?",
+        "answer1": "are",
+        "answer2": "have",
+        "answer3": "is",
+        "answer4": "do",
+        "correctAnswer": "is"
+      },
+      {
+        "id": 23,
+        "question": "Look! The bus _________ .",
+        "answer1": "does leave",
+        "answer2": "leaving",
+        "answer3": "leaves",
+        "answer4": "is leaving",
+        "correctAnswer": "is leaving"
+      },
+      {
+        "id": 24,
+        "question": "He went to the Stadium .....",
+        "answer1": "with taxi",
+        "answer2": "by taxi",
+        "answer3": "on taxi",
+        "answer4": "in taxi",
+        "correctAnswer": "by taxi"
+      }
+    ]
+  ],
+  "result": [
+    {
+      "name": "xxx",
+      "LastName": "xxx",
+      "MiddleName": "xxx",
+      "CompanyName": "xxx",
+      "currentExam": [
+        {
+          "id": 1,
+          "question": "Which one of the five is least like the other four?",
+          "answer1": "Dog",
+          "answer2": "Mouse",
+          "answer3": "Lion",
+          "answer4": "Snake",
+          "correctAnswer": "Snake"
+        },
+        {
+          "id": 2,
+          "question": "Which number should come next in the series? 1 - 1 - 2 - 3 - 5 - 8 - 13",
+          "answer1": "8",
+          "answer2": "13",
+          "answer3": "21",
+          "answer4": "26",
+          "correctAnswer": "21"
+        },
+        {
+          "id": 3,
+          "question": "Which one of the five choices makes the best comparison? PEACH is to HCAEP as 46251 is to:",
+          "answer1": "25641",
+          "answer2": "26451",
+          "answer3": "12654",
+          "answer4": "15264",
+          "correctAnswer": "15264"
+        },
+        {
+          "id": 4,
+          "question": "Mary, who is sixteen years old, is four times as old as her brother. How old will Mary be when she is twice as old as her brother?",
+          "answer1": "20",
+          "answer2": "24",
+          "answer3": "25",
+          "answer4": "28",
+          "correctAnswer": "24"
+        },
+        {
+          "id": 5,
+          "question": "Which one of the numbers does not belong in the following series? 2 - 3 - 6 - 7 - 8 - 14 - 15 - 30",
+          "answer1": "THREE",
+          "answer2": "SEVEN",
+          "answer3": "EIGHT",
+          "answer4": "FIFTEEN",
+          "correctAnswer": "EIGHT"
+        },
+        {
+          "id": 6,
+          "question": "Which one of the five choices makes the best comparison? Finger is to Hand as Leaf is to:",
+          "answer1": "Twig",
+          "answer2": "Tree",
+          "answer3": "Branch",
+          "answer4": "Blossom",
+          "correctAnswer": "Twig"
+        }
+      ],
+      "answers": [
+        "Ճիշտ պատասխան: ",
+        "Ճիշտ պատասխան: ",
+        "Ճիշտ պատասխան: ",
+        "Սխալ պատասխան: - 24",
+        "Ճիշտ պատասխան: ",
+        "Ճիշտ պատասխան: "
+      ],
+      "TrueAnswer": 5,
+      "FalseAnswer": 1,
+      "id": 1
+    }
+  ],
+  "profile": {}
+}

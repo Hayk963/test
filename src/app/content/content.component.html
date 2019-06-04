@@ -1,0 +1,161 @@
+
+
+<body>
+<div class="container" >
+  <div class="row">
+    <div class="col-6" >
+    <div class="timer" >
+      <span> {{ hour2 }} </span>
+      <span> {{ hour1 }} : </span>
+      <span> {{ minute2 }} </span>
+      <span> {{ minute1 }} : </span>
+      <span> {{ second2 }} </span>
+      <span> {{ second1 }} </span>
+    </div>
+      </div>
+
+
+    <!--<button (click)="setExam()">GEV</button>-->
+
+
+      <!--login form-->
+    <div class="col-6 offset-3" >
+      <div class="style">
+        <form [formGroup]="form" >
+          <div formGroupName="user">
+            <p class="form"> ՄՈՒՏՔԱԳՐԵԼ ՏՎՅԱԼՆԵՐԸ </p>
+            <hr class="hr">
+            <div class="form-group">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4">
+                    <p style="text-align: right; font-size: large"> ԱՆՈՒՆ: </p>
+                  </div>
+                  <div class="col-8">
+                    <input type="name" class="form-control" formControlName="name" placeholder="Մուտքագրել անունը"
+                           [ngClass]="{ 'setBorder': form.get('user.name').touched && form.get('user.name').invalid }" >
+                    <p *ngIf="form.get('user.name').invalid&&form.get('user.name').touched" class="text-danger" style="font-size: smaller">
+                     Պարտադիր լրացման դաշտ*</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4">
+                    <p style="text-align: right; font-size: large"> ԱԶԳԱՆՈՒՆ: </p>
+                  </div>
+                  <div class="col-8">
+                    <input type="LastName" class="form-control" formControlName="LastName" placeholder="Մուտքագրել ազգանունը"
+                           [ngClass]="{ 'setBorder': form.get('user.LastName').touched && form.get('user.LastName').invalid }"  >
+                    <p *ngIf="form.get('user.LastName').invalid&&form.get('user.LastName').touched" class="text-danger" style="font-size: smaller">
+                      Պարտադիր լրացման դաշտ*</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4">
+                    <p style="text-align: right; font-size: large"> ՀԱՅՐԱՆՈՒՆ: </p>
+                  </div>
+                  <div class="col-8">
+                    <input type="MiddleName" class="form-control" formControlName="MiddleName" placeholder="Մուտքագրել հայրանունը"
+                           [ngClass]="{ 'setBorder': form.get('user.MiddleName').touched && form.get('user.MiddleName').invalid }"  >
+                    <p *ngIf="form.get('user.MiddleName').invalid&&form.get('user.MiddleName').touched" class="text-danger" style="font-size: smaller">
+                      Պարտադիր լրացման դաշտ*</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4">
+                    <p style="text-align: right; font-size: large"> ԿԱԶՄ. ԱՆՈՒՆ: </p>
+                  </div>
+                  <div class="col-8">
+                    <input type="CompanyName" class="form-control" formControlName="CompanyName" placeholder="Կազմակերպության անունը"
+                           [ngClass]="{ 'setBorder': form.get('user.CompanyName').touched && form.get('user.CompanyName').invalid }"  >
+                    <p *ngIf="form.get('user.CompanyName').invalid&&form.get('user.CompanyName').touched" class="text-danger" style="font-size: smaller">
+                      Պարտադիր լրացման դաշտ*</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-outline" (click)="setExam(); timer()"
+                  onclick="disabled=true" [disabled]="form.invalid"> Սկսել թեսթը </button>
+        </form>
+      </div>
+
+      <br><hr><br>
+
+
+      <!--question-answer-->
+
+  <form [formGroup]="test" *ngIf="form.get('user.name').disabled" >
+      <div class="form-group style">
+
+        <ol style="list-style-type:none;" class="list-group-item" *ngFor="let exam of currentExam; let i=index" >
+          <li> {{ i+1+'.' }}
+            <b> <u> {{exam.question}} </u> </b>
+          </li>
+         <!--<ol type="a">   tarberakneri vra tarer dnely yst cankutyan-->
+          <li [ngClass]="{ 'setColorTrue': exam.answer1==exam.correctAnswer &&  test.get('0').disabled,
+              'setColorFalse': test.get([i]).value==exam.answer1 && exam.answer1 != exam.correctAnswer &&  test.get('0').disabled }">
+            <input type="radio" [name]="i" value="{{exam.answer1}}" class="form-radio" [formControlName]="i">
+            {{ exam.answer1 }}
+          </li>
+          <li [ngClass]="{ 'setColorTrue': exam.answer2==exam.correctAnswer &&  test.get('0').disabled,
+              'setColorFalse': test.get([i]).value==exam.answer2 &&  exam.answer2 != exam.correctAnswer &&  test.get('0').disabled }">
+            <input type="radio"  [name]="i" value="{{exam.answer2}}" class="form-radio" [formControlName]="i">
+            {{ exam.answer2}}
+          </li>
+          <li [ngClass]="{ 'setColorTrue': exam.answer3==exam.correctAnswer &&  test.get('0').disabled,
+              'setColorFalse': test.get([i]).value==exam.answer3 &&  exam.answer3 != exam.correctAnswer &&  test.get('0').disabled }">
+            <input type="radio"  [name]="i" value="{{exam.answer3}}" class="form-radio" [formControlName]="i">
+            {{ exam.answer3 }}
+          </li>
+          <li [ngClass]="{ 'setColorTrue': exam.answer4==exam.correctAnswer &&  test.get('0').disabled,
+             'setColorFalse': test.get([i]).value==exam.answer4 &&  exam.answer4 != exam.correctAnswer &&  test.get('0').disabled }">
+            <input type="radio"  [name]="i" value="{{exam.answer4}}" class="form-radio" [formControlName]="i">
+            {{ exam.answer4 }}
+          </li>
+         <!--</ol> -->
+        </ol>
+      </div>
+<br>
+      <button type="submit" class="btn btn-outline btn-lg"
+            onclick="disabled=true" [disabled]="test.get('0').disabled" on-click="check(); stop()"> Վերջացնել </button>
+
+      <div class="form-group style"  *ngIf="test.get('0').disabled">
+
+        <p style="font-weight: bold"> Անուն: {{ name }} </p>
+        <p style="font-weight: bold"> Ազգանուն: {{ LastName }}</p>
+        <p style="font-weight: bold"> Հայրանուն: {{ MiddleName }}</p>
+        <p style="font-weight: bold; color: green"> Ճիշտ պատասխան: {{ yes }} </p>
+        <p style="font-weight: bold; color: red" > Սխալ պատասխան: {{ no }} </p>
+        <ol>
+          <li *ngFor="let ans of answer; let i=index">  {{ ans }}  </li>
+        </ol>
+
+      </div>
+
+
+    <button type="submitd" class="btn btn-outline btn-lg" on-click="toPrint()" *ngIf="test.get('0').disabled"> Տպել </button>
+
+
+  </form>
+
+    </div>
+  </div>
+</div>
+</body>
+
+
+
+
